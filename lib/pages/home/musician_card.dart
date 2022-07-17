@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yili_music_app/theme.dart';
 
 class MusicianCard extends StatelessWidget {
   const MusicianCard(
@@ -28,20 +29,14 @@ class MusicianCard extends StatelessWidget {
           ),
           Text(
             name,
-            style: const TextStyle(
-              fontSize: 16,
-              color: Color(0xFF002150)
-            )
+            style: primaryText
           ),
           const SizedBox(
             height: 5,
           ),
           Text(
             category,
-            style: const TextStyle(
-              color: Color(0XFF7A869A),
-              fontSize: 12
-            )
+            style: secondaryText
           )
         ],
       ),
