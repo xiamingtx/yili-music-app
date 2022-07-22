@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yili_music_app/pages/home/home_page.dart';
 import 'package:yili_music_app/pages/login/login_page.dart';
+import 'package:yili_music_app/pages/playlist/detail_page.dart';
 import 'package:yili_music_app/theme.dart';
 
 void main() {
@@ -22,7 +23,8 @@ class YuanLiMusic extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-        '/login': (context) => const LoginPage()
+        '/login': (context) => const LoginPage(),
+        '/playlist/detail': (context) => const PlaylistDetailPage(),
       },
     );
   }
